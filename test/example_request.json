@@ -1,0 +1,50 @@
+// Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License").
+// You may not use this file except in compliance with the License.
+// a copy of the License is located at
+//
+// 	http://www.apache.org/licenses/LICENSE-2.0
+//
+// or in the "license" file accompanying this file. This file is distributed
+// on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the License for the specific language governing
+// permissions and limitations under the License.
+
+{
+    "resource": "/JiraToChime",
+    "path": "/JiraToChime",
+    "httpMethod": "POST",
+    "headers": null,
+    "queryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "path": "/JiraToChime",
+        "accountId": "************",
+        "resourceId": "resource_id",
+        "stage": "test-invoke-stage",
+        "requestId": "test-invoke-request",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "cognitoIdentityId": null,
+            "apiKey": "api-key",
+            "cognitoAuthenticationType": null,
+            "userArn": "user-arn",
+            "apiKeyId": "api-key-id",
+            "userAgent": "user_agent",
+            "accountId": "************",
+            "caller": "*********************:username",
+            "sourceIp": "source-ip",
+            "accessKey": "********************",
+            "cognitoAuthenticationProvider": null,
+            "user": "*********************:username"
+        },
+        "resourcePath": "/JiraToChime",
+        "httpMethod": "POST",
+        "extendedRequestId": "extended-request-id",
+        "apiId": "**********"
+    },
+    "body": "{\r\n    \"timestamp\": 1512702174821,\r\n    \"webhookEvent\": \"jira:issue_created\",\r\n    \"issue_event_type_name\": \"issue_created\",\r\n    \"user\": {\r\n        \"self\": \"https://jira-instance.company.com/rest/api/2/user?username=jsmithexample\",\r\n        \"name\": \"jsmithexample\",\r\n        \"key\": \"jsmithexample\",\r\n        \"emailAddress\": \"jsmithexample@amazon.com\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://jira-instance.company.com/secure/useravatar?ownerId=jsmithexample&avatarId=10600\",\r\n            \"24x24\": \"https://jira-instance.company.com/secure/useravatar?size=small&ownerId=jsmithexample&avatarId=10600\",\r\n            \"16x16\": \"https://jira-instance.company.com/secure/useravatar?size=xsmall&ownerId=jsmithexample&avatarId=10600\",\r\n            \"32x32\": \"https://jira-instance.company.com/secure/useravatar?size=medium&ownerId=jsmithexample&avatarId=10600\"\r\n        },\r\n        \"displayName\": \"Jane Smith\",\r\n        \"active\": true,\r\n        \"timeZone\": \"America/Los_Angeles\"\r\n    },\r\n    \"issue\": {\r\n        \"id\": \"10934\",\r\n        \"self\": \"https://jira-instance.company.com/rest/api/2/issue/10934\",\r\n        \"key\": \"TEST-15\",\r\n        \"fields\": {\r\n            \"issuetype\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/issuetype/10001\",\r\n                \"id\": \"10001\",\r\n                \"description\": \"gh.issue.story.desc\",\r\n                \"iconUrl\": \"https://jira-instance.company.com/images/icons/issuetypes/story.svg\",\r\n                \"name\": \"Story\",\r\n                \"subtask\": false\r\n            },\r\n            \"components\": [],\r\n            \"timespent\": null,\r\n            \"timeoriginalestimate\": null,\r\n            \"description\": null,\r\n            \"project\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/project/10006\",\r\n                \"id\": \"10006\",\r\n                \"key\": \"TEST\",\r\n                \"name\": \"Test Project\",\r\n                \"avatarUrls\": {\r\n                    \"48x48\": \"https://jira-instance.company.com/secure/projectavatar?avatarId=10324\",\r\n                    \"24x24\": \"https://jira-instance.company.com/secure/projectavatar?size=small&avatarId=10324\",\r\n                    \"16x16\": \"https://jira-instance.company.com/secure/projectavatar?size=xsmall&avatarId=10324\",\r\n                    \"32x32\": \"https://jira-instance.company.com/secure/projectavatar?size=medium&avatarId=10324\"\r\n                }\r\n            },\r\n            \"fixVersions\": [],\r\n            \"aggregatetimespent\": null,\r\n            \"resolution\": null,\r\n            \"timetracking\": {},\r\n            \"customfield_10006\": null,\r\n            \"customfield_10007\": null,\r\n            \"customfield_10008\": null,\r\n            \"attachment\": [],\r\n            \"aggregatetimeestimate\": null,\r\n            \"resolutiondate\": null,\r\n            \"workratio\": -1,\r\n            \"summary\": \"Testing New Ticket Creation Ticket Title\",\r\n            \"lastViewed\": null,\r\n            \"watches\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/issue/TEST-15/watchers\",\r\n                \"watchCount\": 0,\r\n                \"isWatching\": false\r\n            },\r\n            \"creator\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/user?username=jsmithexample\",\r\n                \"name\": \"jsmithexample\",\r\n                \"key\": \"jsmithexample\",\r\n                \"emailAddress\": \"jsmithexample@amazon.com\",\r\n                \"avatarUrls\": {\r\n                    \"48x48\": \"https://jira-instance.company.com/secure/useravatar?ownerId=jsmithexample&avatarId=10600\",\r\n                    \"24x24\": \"https://jira-instance.company.com/secure/useravatar?size=small&ownerId=jsmithexample&avatarId=10600\",\r\n                    \"16x16\": \"https://jira-instance.company.com/secure/useravatar?size=xsmall&ownerId=jsmithexample&avatarId=10600\",\r\n                    \"32x32\": \"https://jira-instance.company.com/secure/useravatar?size=medium&ownerId=jsmithexample&avatarId=10600\"\r\n                },\r\n                \"displayName\": \"Jane Smith\",\r\n                \"active\": true,\r\n                \"timeZone\": \"America/Los_Angeles\"\r\n            },\r\n            \"subtasks\": [],\r\n            \"created\": \"2017-12-08T03:02:54.716+0000\",\r\n            \"reporter\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/user?username=jsmithexample\",\r\n                \"name\": \"jsmithexample\",\r\n                \"key\": \"jsmithexample\",\r\n                \"emailAddress\": \"jsmithexample@amazon.com\",\r\n                \"avatarUrls\": {\r\n                    \"48x48\": \"https://jira-instance.company.com/secure/useravatar?ownerId=jsmithexample&avatarId=10600\",\r\n                    \"24x24\": \"https://jira-instance.company.com/secure/useravatar?size=small&ownerId=jsmithexample&avatarId=10600\",\r\n                    \"16x16\": \"https://jira-instance.company.com/secure/useravatar?size=xsmall&ownerId=jsmithexample&avatarId=10600\",\r\n                    \"32x32\": \"https://jira-instance.company.com/secure/useravatar?size=medium&ownerId=jsmithexample&avatarId=10600\"\r\n                },\r\n                \"displayName\": \"Jane Smith\",\r\n                \"active\": true,\r\n                \"timeZone\": \"America/Los_Angeles\"\r\n            },\r\n            \"customfield_10000\": \"0|i002jn:\",\r\n            \"aggregateprogress\": {\r\n                \"progress\": 0,\r\n                \"total\": 0\r\n            },\r\n            \"priority\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/priority/10000\",\r\n                \"iconUrl\": \"http://files.edx.org.s3.amazonaws.com/Icon-round-Question_mark.jpg\",\r\n                \"name\": \"None\",\r\n                \"id\": \"10000\"\r\n            },\r\n            \"customfield_10001\": null,\r\n            \"customfield_10100\": null,\r\n            \"customfield_10002\": null,\r\n            \"customfield_10101\": null,\r\n            \"labels\": [],\r\n            \"environment\": null,\r\n            \"timeestimate\": null,\r\n            \"aggregatetimeoriginalestimate\": null,\r\n            \"versions\": [],\r\n            \"duedate\": null,\r\n            \"progress\": {\r\n                \"progress\": 0,\r\n                \"total\": 0\r\n            },\r\n            \"comment\": {\r\n                \"comments\": [],\r\n                \"maxResults\": 0,\r\n                \"total\": 0,\r\n                \"startAt\": 0\r\n            },\r\n            \"issuelinks\": [],\r\n            \"votes\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/issue/TEST-15/votes\",\r\n                \"votes\": 0,\r\n                \"hasVoted\": false\r\n            },\r\n            \"worklog\": {\r\n                \"startAt\": 0,\r\n                \"maxResults\": 20,\r\n                \"total\": 0,\r\n                \"worklogs\": []\r\n            },\r\n            \"assignee\": null,\r\n            \"updated\": \"2017-12-08T03:02:54.716+0000\",\r\n            \"status\": {\r\n                \"self\": \"https://jira-instance.company.com/rest/api/2/status/1\",\r\n                \"description\": \"The issue is open but may need more context, details, and/or acceptance criteria.\",\r\n                \"iconUrl\": \"https://jira-instance.company.com/images/icons/statuses/open.png\",\r\n                \"name\": \"Open\",\r\n                \"id\": \"1\",\r\n                \"statusCategory\": {\r\n                    \"self\": \"https://jira-instance.company.com/rest/api/2/statuscategory/2\",\r\n                    \"id\": 2,\r\n                    \"key\": \"new\",\r\n                    \"colorName\": \"blue-gray\",\r\n                    \"name\": \"To Do\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n",
+    "isBase64Encoded": false
+}

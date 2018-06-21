@@ -1,0 +1,173 @@
+// Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License").
+// You may not use this file except in compliance with the License.
+// a copy of the License is located at
+//
+// 	http://www.apache.org/licenses/LICENSE-2.0
+//
+// or in the "license" file accompanying this file. This file is distributed
+// on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the License for the specific language governing
+// permissions and limitations under the License.
+
+{
+    "timestamp": 1512702174821,
+    "webhookEvent": "jira:issue_created",
+    "issue_event_type_name": "issue_created",
+    "user": {
+        "self": "https://jira-instance.company.com/rest/api/2/user?username=jsmithexample",
+        "name": "jsmithexample",
+        "key": "jsmithexample",
+        "emailAddress": "jsmithexample@amazon.com",
+        "avatarUrls": {
+            "48x48": "https://jira-instance.company.com/secure/useravatar?ownerId=jsmithexample&avatarId=10600",
+            "24x24": "https://jira-instance.company.com/secure/useravatar?size=small&ownerId=jsmithexample&avatarId=10600",
+            "16x16": "https://jira-instance.company.com/secure/useravatar?size=xsmall&ownerId=jsmithexample&avatarId=10600",
+            "32x32": "https://jira-instance.company.com/secure/useravatar?size=medium&ownerId=jsmithexample&avatarId=10600"
+        },
+        "displayName": "Jane Smith",
+        "active": true,
+        "timeZone": "America/Los_Angeles"
+    },
+    "issue": {
+        "id": "10934",
+        "self": "https://jira-instance.company.com/rest/api/2/issue/10934",
+        "key": "TEST-15",
+        "fields": {
+            "issuetype": {
+                "self": "https://jira-instance.company.com/rest/api/2/issuetype/10001",
+                "id": "10001",
+                "description": "gh.issue.story.desc",
+                "iconUrl": "https://jira-instance.company.com/images/icons/issuetypes/story.svg",
+                "name": "Story",
+                "subtask": false
+            },
+            "components": [],
+            "timespent": null,
+            "timeoriginalestimate": null,
+            "description": null,
+            "project": {
+                "self": "https://jira-instance.company.com/rest/api/2/project/10006",
+                "id": "10006",
+                "key": "TEST",
+                "name": "Test Project",
+                "avatarUrls": {
+                    "48x48": "https://jira-instance.company.com/secure/projectavatar?avatarId=10324",
+                    "24x24": "https://jira-instance.company.com/secure/projectavatar?size=small&avatarId=10324",
+                    "16x16": "https://jira-instance.company.com/secure/projectavatar?size=xsmall&avatarId=10324",
+                    "32x32": "https://jira-instance.company.com/secure/projectavatar?size=medium&avatarId=10324"
+                }
+            },
+            "fixVersions": [],
+            "aggregatetimespent": null,
+            "resolution": null,
+            "timetracking": {},
+            "customfield_10006": null,
+            "customfield_10007": null,
+            "customfield_10008": null,
+            "attachment": [],
+            "aggregatetimeestimate": null,
+            "resolutiondate": null,
+            "workratio": -1,
+            "summary": "Testing New Ticket Creation Ticket Title",
+            "lastViewed": null,
+            "watches": {
+                "self": "https://jira-instance.company.com/rest/api/2/issue/TEST-15/watchers",
+                "watchCount": 0,
+                "isWatching": false
+            },
+            "creator": {
+                "self": "https://jira-instance.company.com/rest/api/2/user?username=jsmithexample",
+                "name": "jsmithexample",
+                "key": "jsmithexample",
+                "emailAddress": "jsmithexample@amazon.com",
+                "avatarUrls": {
+                    "48x48": "https://jira-instance.company.com/secure/useravatar?ownerId=jsmithexample&avatarId=10600",
+                    "24x24": "https://jira-instance.company.com/secure/useravatar?size=small&ownerId=jsmithexample&avatarId=10600",
+                    "16x16": "https://jira-instance.company.com/secure/useravatar?size=xsmall&ownerId=jsmithexample&avatarId=10600",
+                    "32x32": "https://jira-instance.company.com/secure/useravatar?size=medium&ownerId=jsmithexample&avatarId=10600"
+                },
+                "displayName": "Jane Smith",
+                "active": true,
+                "timeZone": "America/Los_Angeles"
+            },
+            "subtasks": [],
+            "created": "2017-12-08T03:02:54.716+0000",
+            "reporter": {
+                "self": "https://jira-instance.company.com/rest/api/2/user?username=jsmithexample",
+                "name": "jsmithexample",
+                "key": "jsmithexample",
+                "emailAddress": "jsmithexample@amazon.com",
+                "avatarUrls": {
+                    "48x48": "https://jira-instance.company.com/secure/useravatar?ownerId=jsmithexample&avatarId=10600",
+                    "24x24": "https://jira-instance.company.com/secure/useravatar?size=small&ownerId=jsmithexample&avatarId=10600",
+                    "16x16": "https://jira-instance.company.com/secure/useravatar?size=xsmall&ownerId=jsmithexample&avatarId=10600",
+                    "32x32": "https://jira-instance.company.com/secure/useravatar?size=medium&ownerId=jsmithexample&avatarId=10600"
+                },
+                "displayName": "Jane Smith",
+                "active": true,
+                "timeZone": "America/Los_Angeles"
+            },
+            "customfield_10000": "0|i002jn:",
+            "aggregateprogress": {
+                "progress": 0,
+                "total": 0
+            },
+            "priority": {
+                "self": "https://jira-instance.company.com/rest/api/2/priority/10000",
+                "iconUrl": "http://files.edx.org.s3.amazonaws.com/Icon-round-Question_mark.jpg",
+                "name": "None",
+                "id": "10000"
+            },
+            "customfield_10001": null,
+            "customfield_10100": null,
+            "customfield_10002": null,
+            "customfield_10101": null,
+            "labels": [],
+            "environment": null,
+            "timeestimate": null,
+            "aggregatetimeoriginalestimate": null,
+            "versions": [],
+            "duedate": null,
+            "progress": {
+                "progress": 0,
+                "total": 0
+            },
+            "comment": {
+                "comments": [],
+                "maxResults": 0,
+                "total": 0,
+                "startAt": 0
+            },
+            "issuelinks": [],
+            "votes": {
+                "self": "https://jira-instance.company.com/rest/api/2/issue/TEST-15/votes",
+                "votes": 0,
+                "hasVoted": false
+            },
+            "worklog": {
+                "startAt": 0,
+                "maxResults": 20,
+                "total": 0,
+                "worklogs": []
+            },
+            "assignee": null,
+            "updated": "2017-12-08T03:02:54.716+0000",
+            "status": {
+                "self": "https://jira-instance.company.com/rest/api/2/status/1",
+                "description": "The issue is open but may need more context, details, and/or acceptance criteria.",
+                "iconUrl": "https://jira-instance.company.com/images/icons/statuses/open.png",
+                "name": "Open",
+                "id": "1",
+                "statusCategory": {
+                    "self": "https://jira-instance.company.com/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                }
+            }
+        }
+    }
+}
