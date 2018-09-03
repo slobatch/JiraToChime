@@ -1,0 +1,201 @@
+// Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License").
+// You may not use this file except in compliance with the License.
+// a copy of the License is located at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+// or in the "license" file accompanying this file. This file is distributed
+// on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the License for the specific language governing
+// permissions and limitations under the License.
+
+{
+    "timestamp": 1535975989837,
+    "webhookEvent": "jira:issue_updated",
+    "issue_event_type_name": "issue_comment_edited",
+    "user": {
+        "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+        "name": "TestUsername",
+        "key": "userkey",
+        "emailAddress": "TestUsername@example.com",
+        "displayName": "TestUsername",
+        "active": true,
+        "timeZone": "Europe/London"
+    },
+    "issue": {
+        "id": "40238",
+        "self": "https://jira-url.example.com/rest/api/2/issue/40238",
+        "key": "PROJECT-29",
+        "fields": {
+            "issuetype": {
+                "self": "https://jira-url.example.com/rest/api/2/issuetype/10000",
+                "id": "10000",
+                "description": "Request from example or  for support .",
+                "iconUrl": "https://jira-url.example.com/secure/viewavatar?size=xsmall&avatarId=10860&avatarType=issuetype",
+                "name": "Support Request / Task",
+                "subtask": false,
+                "avatarId": 10860
+            },
+            "timespent": null,
+            "project": {
+                "self": "https://jira-url.example.com/rest/api/2/project/11263",
+                "id": "11263",
+                "key": "PROJECT",
+                "name": "Project Project",
+                "projectCategory": {
+                    "self": "https://jira-url.example.com/rest/api/2/projectCategory/10000",
+                    "id": "10000",
+                    "description": "projects",
+                    "name": "Projects"
+                }
+            },
+            "fixVersions": [],
+            "aggregatetimespent": null,
+            "resolution": null,
+            "resolutiondate": null,
+            "workratio": -1,
+            "lastViewed": "2018-09-03T11:59:49.820+0000",
+            "watches": {
+                "self": "https://jira-url.example.com/rest/api/2/issue/PROJECT-29/watchers",
+                "watchCount": 1,
+                "isWatching": true
+            },
+            "created": "2018-09-03T11:58:50.933+0000",
+            "priority": {
+                "self": "https://jira-url.example.com/rest/api/2/priority/3",
+                "iconUrl": "https://jira-url.example.com/images/icons/priorities/major.svg",
+                "name": "Medium",
+                "id": "3"
+            },
+            "labels": [],
+            "timeestimate": null,
+            "aggregatetimeoriginalestimate": null,
+            "issuelinks": [],
+            "assignee": {
+                "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+                "name": "TestUsername",
+                "key": "userkey",
+                "emailAddress": "TestUsername@example.com",
+                "displayName": "TestUsername",
+                "active": true,
+                "timeZone": "Europe/London"
+            },
+            "updated": "2018-09-03T11:59:42.745+0000",
+            "status": {
+                "self": "https://jira-url.example.com/rest/api/2/status/10115",
+                "description": "Issues that have not yet been triaged by example",
+                "iconUrl": "https://jira-url.example.com/images/icons/statuses/generic.png",
+                "name": "Untriaged",
+                "id": "10115",
+                "statusCategory": {
+                    "self": "https://jira-url.example.com/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                }
+            },
+            "components": [],
+            "timeoriginalestimate": null,
+            "customfield_10250": "0|i04rqg:",
+            "description": "test",
+            "attachment": [],
+            "aggregatetimeestimate": null,
+            "summary": "test",
+            "creator": {
+                "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+                "name": "TestUsername",
+                "key": "userkey",
+                "emailAddress": "TestUsername@example.com",
+                "displayName": "TestUsername",
+                "active": true,
+                "timeZone": "Europe/London"
+            },
+            "subtasks": [],
+            "reporter": {
+                "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+                "name": "TestUsername",
+                "key": "userkey",
+                "emailAddress": "TestUsername@example.com",
+                "displayName": "TestUsername",
+                "active": true,
+                "timeZone": "Europe/London"
+            },
+            "customfield_11055": null,
+            "customfield_11056": null,
+            "aggregateprogress": {
+                "progress": 0,
+                "total": 0
+            },
+            "environment": null,
+            "progress": {
+                "progress": 0,
+                "total": 0
+            },
+            "comment": {
+                "comments": [
+                    {
+                        "self": "https://jira-url.example.com/rest/api/2/issue/40238/comment/122133",
+                        "id": "122133",
+                        "author": {
+                            "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+                            "name": "TestUsername",
+                            "key": "userkey",
+                            "emailAddress": "TestUsername@example.com",
+                            "displayName": "TestUsername",
+                            "active": true,
+                            "timeZone": "Europe/London"
+                        },
+                        "body": "test comment update",
+                        "updateAuthor": {
+                            "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+                            "name": "TestUsername",
+                            "key": "userkey",
+                            "emailAddress": "TestUsername@example.com",
+                            "displayName": "TestUsername",
+                            "active": true,
+                            "timeZone": "Europe/London"
+                        },
+                        "created": "2018-09-03T11:59:42.745+0000",
+                        "updated": "2018-09-03T11:59:49.825+0000"
+                    }
+                ],
+                "maxResults": 1,
+                "total": 1,
+                "startAt": 0
+            },
+            "votes": {
+                "self": "https://jira-url.example.com/rest/api/2/issue/PROJECT-29/votes",
+                "votes": 0,
+                "hasVoted": false
+            }
+        }
+    },
+    "comment": {
+        "self": "https://jira-url.example.com/rest/api/2/issue/40238/comment/122133",
+        "id": "122133",
+        "author": {
+            "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+            "name": "TestUsername",
+            "key": "userkey",
+            "emailAddress": "TestUsername@example.com",
+            "displayName": "TestUsername",
+            "active": true,
+            "timeZone": "Europe/London"
+        },
+        "body": "test comment update",
+        "updateAuthor": {
+            "self": "https://jira-url.example.com/rest/api/2/user?username=TestUsername",
+            "name": "TestUsername",
+            "key": "userkey",
+            "emailAddress": "TestUsername@example.com",
+            "displayName": "TestUsername",
+            "active": true,
+            "timeZone": "Europe/London"
+        },
+        "created": "2018-09-03T11:59:42.745+0000",
+        "updated": "2018-09-03T11:59:49.825+0000"
+    }
+}
