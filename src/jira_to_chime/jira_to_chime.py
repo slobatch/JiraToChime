@@ -16,7 +16,7 @@ import json
 import os
 
 def lambda_handler(event, context):
-
+    
     try:
         post_to_chime(chime_webhook_url = os.environ['CHIME_HOOK'], message = assemble_message(event))
     except Exception as e:
@@ -43,6 +43,9 @@ def assemble_message(event):
     jira_event_type = body['issue_event_type_name']
     jira_base_url = os.environ['JIRA_URL']
 
+    #print (jira_event_type)
+    #print (jira_webhook_event)
+
     # Remove trailing slash in JIRA's base url if present.
     if jira_base_url[len(jira_base_url)-1] == "/":
         jira_base_url = jira_base_url[:-1]
@@ -55,21 +58,29 @@ def assemble_message(event):
         username = body['user']['displayName']
     if 'comment' in body:
         author_name = body['comment']['author']['displayName']
+        newComment = body['comment']['body']
+        updateAuthor = body['comment']['updateAuthor']['displayName']
+    if 'changelog' in body:
+        issueUpdates = ""
+        for item in body['changelog']['items']:
+            issueUpdates += item['field'] + " has changed from " + item['fromString'] + " to " + item['toString'] + "\n"
 
     # Issue...
     if jira_event_type == "issue_created":
         message= username+" has CREATED a new issue: \n("+issue_key+") "+issue_summary+"\n"+issue_url
     elif jira_event_type == "issue_updated":
-        message = username+" has UPDATED an issue: \n("+issue_key+") "+issue_summary+"\n"+issue_url
+        message = username+" has UPDATED an issue: \n("+issue_key+") "+issue_summary+"\n"+issue_url + "\n" + issueUpdates
     elif jira_event_type == "issue_deleted":
         message = username+" has DELETED an issue: \n("+issue_key+") "+issue_summary+"\n"+issue_url
+
     # Comment...
-    elif jira_event_type == "comment_created":
-        message = ""
-    elif jira_event_type == "comment_updated":
-        message = ""
-    elif jira_event_type == "comment_deleted":
-        message = ""
+    elif jira_event_type == "issue_commented":
+        message = author_name + " has commented on issue: " + issue_url + ".\n" + "**\n" + newComment + "\n**"
+    elif jira_event_type == "issue_comment_edited":
+        message = updateAuthor + " has updated a comment on issue: " + issue_url + ".\n" + "**\n" + newComment + "\n**"
+    elif jira_event_type == "issue_comment_deleted":
+        message = username + " has deleted a comment on issue: " + issue_url + "."
+
     # Sprint...
     elif jira_event_type == "sprint_created":
         message = ""
